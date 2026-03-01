@@ -18,7 +18,6 @@ async function pegarConselhoAleatorio() {
     const conselhoApi = await geradorDeConselhos();
     const conselho = await pegarConselhos(conselhoApi.slip.id);
     document.getElementById('conselho').innerText = conselho.slip.advice;
-    console.log(conselho)
 }
 
 pegarConselhoAleatorio()
